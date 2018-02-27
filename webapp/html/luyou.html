@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+	height=device-height,user-scalable=no,initial-scale=1.0,
+	maximum-scale=1.0,minimum-scale=1.0">
+<title></title>
+<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js">
+</script>
+<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular-route.min.js">
+</script>
+<script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js">
+</script>
+<style>
+html,body,.all{width:100%;height:100%;}
+*{padding:0;margin:0;}
+.all{display:flex;flex-flow: column nowrap;}
+.top{width:100%;height:auto;}
+.center{flex:1;overflow-y:auto;}
+
+
+
+.down{width:100%;height:51px;display:flex;
+      border-top:1px darkgray solid;
+      justify-content:space-between;list-style:none;
+      background:#ffffff;list-style:none;}
+.down li{width:20%;height:100%;}
+.down li a{width:100%;height:100%;display:block;text-decoration:none;
+           color:black;}
+.img1,.img2,.img4,.img5{width:100%;height:25px;
+                        text-align:center;display:block;}
+.img1 img,.img2 img,.img4 img,.img5 img{
+                   width:20px;height:20px;padding-top:5px;}
+.img3{text-align:center;display:block;}
+.img3 img{width:40px;height:40px;padding:5px;}	                      
+.text1,.text2,.text4,.text5{width:100%;height:25px;
+                            font-size:12px;display:block;
+                            text-align:center;
+                            line-height:25px;}
+</style>
+</head>
+<body>
+<div ng-app="app" class="all">
+	<div class="center" ng-view></div>
+	<div ng-controller="ctrla">
+		<ul class="down"><!--下方切换部分-->
+		<li class="index">
+			<a href="#/index">
+				<span class="img1">
+					<img src="../img/1.gif">
+				</span>
+				<span class="text1">甫田</span>
+			</a>
+		</li>
+		<li class="classify1">
+			<a href="#/classify1">
+				<span class="img2">
+					<img src="../img/2.gif">
+				</span>
+				<span class="text2">分类</span>
+			</a>
+		</li>
+		<li class="img3">
+			<a href="#/register"><img src="../img/3.gif"/></a>
+		</li>
+		<li class="food">
+			<a href="#/food">
+				<span class="img4">
+					<img src="../img/4.gif">
+				</span>
+				<span class="text4">食记</span>
+			</a>
+		</li>
+		<li class="myself">
+			<a href="#/myself">
+				<span class="img5">
+					<img src="../img/5.gif">
+				</span>
+				<span class="text5">我</span>
+			</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</body>
+<script>
+var app=angular.module("app",["ngRoute"]);
+app.config(["$routeProvider",function($routeProvider){
+	$routeProvider
+	.when("/",{templateUrl:"index.html"})
+	.when("/classify1",{templateUrl:"classify1.html"})
+	.when("/register",{templateUrl:"register.html"})
+	.when("/food",{templateUrl:"food.html"})
+	.when("/myself",{templateUrl:"myself.html"})
+	.otherwise({redirectTo:"/"})
+}])
+
+app.controller("ctrla",[])
+</script>
+</html>

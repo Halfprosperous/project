@@ -1,0 +1,36 @@
+*{padding:0;margin:0;}
+.top{height:40px;border-bottom:1px #f0f0f0 solid;text-align:center;line-height:40px;
+display:block;
+     background:url(../img/login/1.gif)no-repeat;}
+     
+.form{position:relative;}
+.phone{background:url(../img/register.img/1.gif)no-repeat;margin-top:10%;}
+.square{background:url(../img/register.img/2.gif)no-repeat;width:60%;
+        margin-left:8%;border-radius:2px;padding-left:30px;display:inline-block;
+        height:30px;outline:none;border-right:none;border:1px #f0f0f0 solid;}
+.verify{width:24%;height:28px;border:1px #f0f0f0 solid;display:inline-block;
+        border-left:none;background:darkgray;
+        position:absolute;top:25%;right:3.5%;font-size:12px;color:white;
+        text-align:center;line-height:28px;}
+.massage{background:url(../img/register.img/3.gif)no-repeat;}
+.password{background:url(../img/register.img/4.gif)no-repeat;}
+.phone,.massage,.password{border-bottom:none;display:block;height:30px;
+                         width:80%;border:1px #f0f0f0 solid;outline:none;
+                         padding-left:30px;margin-left:8%;border-radius:2px;}
+.check{margin-left:8%;margin-top:5%;}
+
+
+
+
+.agree{color:darkgray;font-size:12px;}
+.href{color:#009c4c;font-size:12px;}
+
+
+
+.btnbox{width:86%;margin-left:8%;background:#009c4c;padding:2% 0px;
+         border-radius:2px;display:block;color:white;text-align:center;margin-top:2%;}
+
+      
+      
+.last{color:#009c4c;text-align:center;font-size:14px;height:35px;
+     line-height:35px;}

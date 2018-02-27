@@ -1,0 +1,27 @@
+*{padding:0;margin:0;}
+.top{height:40px;border-bottom:1px #f0f0f0 solid;text-align:center;line-height:40px;
+display:block;
+     background:url(../img/login/1.gif)no-repeat;}
+
+
+
+.phone{background:url(../img/login/2.gif)no-repeat;margin-top:10%;}
+.password{background:url(../img/login/3.gif)no-repeat;}
+.phone,.password{border-bottom:none;display:block;height:30px;width:80%;
+                 border:1px #f0f0f0 solid;outline:none;padding-left:25px;
+                 margin-left:8%;border-radius:2px;}
+                 
+                 
+                 
+.forget{color:darkgreen;font-size:13px;width:100%;margin-left:8%;
+        height:30px;line-height:30px;}
+.forget a{color:red;text-decoration:none;}
+
+
+.btnbox{width:86%;margin-left:8%;background:#009c4c;padding:2% 0px;
+         border-radius:2px;display:block;color:white;text-align:center;}
+
+      
+      
+.last{color:#009c4c;text-align:center;font-size:14px;height:35px;
+     line-height:35px;}
