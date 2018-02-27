@@ -1,0 +1,187 @@
+
+*{padding:0;margin:0;}
+
+
+/*返回顶部图标*/
+body{position:relative;}
+.top-img{background:url("../img/top.png")no-repeat;background-position:0px -40px;width:68px;height:30px;
+    position:fixed;top:600px;right:50px;}
+.top-img:hover{background-position:0px 0px;}
+
+.navbar-inverse{margin-bottom:0px;}
+.menu{padding:10px 15px;line-height:70px;
+    display:block;}
+.language{color:limegreen;}
+.language:hover{text-decoration:none;color:limegreen;}
+.language1:hover{color:limegreen;text-decoration:none;}
+
+
+.gamebanner{width:100%;height:254px;background:url("../img/gamebanner.jpg")no-repeat;}
+
+
+.game-box{height:50px;}
+.game-img{width:30px;height:50px;background:url("../img/location.png")no-repeat;
+          float:left;background-position:0px -82px;}
+.pull-left span{float:right;font-size:30px;line-height:50px;}
+
+.right-box{width:9%;height:30px;position:relative;margin:10px 0px;}
+.house-img{width:20px;height:20px;position:absolute;top:8px;
+           background:url("../img/home.png")no-repeat;}
+.caret-img{width:20px;height:20px;position:absolute;top:0;left:30px;
+           background:url("../img/icon.png")no-repeat;
+           background-position:0px -137px;}
+.pull-right span{float:right;font-size:14px;line-height:30px;}
+
+
+
+
+.text{font-size:16px;height:80px;line-height:80px;color:black;}
+.list-tab a:hover .text{color:limegreen;}
+.list-tab a:hover .list-img1{background:url("../img/pad.png")no-repeat;background-position:-125px 0PX;}
+.list-tab a:hover .list-img2{background:url("../img/pad.png")no-repeat;background-position:-120px -100PX;}
+.list-tab a:hover .list-img3{background:url("../img/pad.png")no-repeat;background-position:-121px -200PX;}
+.list-tab a:hover .list-img4{background:url("../img/pad.png")no-repeat;background-position:-120px -300PX;}
+.list-tab a:hover .list-img5{background:url("../img/pad.png")no-repeat;background-position:-120px -500PX;}
+.list-le1,.list-le2,.list-le3,.list-le4,.list-le5{text-align:center;diaplay:block;
+                                                height:80px;}
+.list-img1{background:url("../img/pad.png")no-repeat;
+           background-position:0px 0PX;}
+.list-img2{background:url("../img/pad.png")no-repeat;
+           background-position:0px -100PX;}
+.list-img3{background:url("../img/pad.png")no-repeat;
+           background-position:0px -200PX;}
+.list-img4{background:url("../img/pad.png")no-repeat;
+           background-position:0px -300px;}
+.list-img5{background:url("../img/pad.png")no-repeat;
+           background-position:0px -500PX;}
+.list-img1,.list-img2,.list-img3,.list-img4,.list-img5{margin:8% 0px;width:40px;height:40px;}
+.caret-img1{width:20px;height:20px;background:url("../img/icon.png")no-repeat;}
+.caret-img2{width:20px;height:20px;background:url("../img/icon.png")no-repeat;}
+.caret-img3{width:20PX;height:20px;background:url("../img/icon.png")no-repeat;}
+.caret-img4{width:20px;height:20px;background:url("../img/icon.png")no-repeat;}
+.caret-img5{width:20px;height:20px;background:url("../img/icon.png")no-repeat;}
+.caret-img1,.caret-img2,.caret-img3,.caret-img4,.caret-img5{
+    background-position:0px -137px;margin:8% 0px;}
+
+
+
+
+
+
+
+
+.tabwidth{display:flex;justify-content: space-between;}
+
+
+/*ipone部分*/
+.tabwidth li{flex-flow:column wrap;list-style:none;border:1px lightgray solid;
+              background:#f7f7f7;border-radius:5px;text-align:center;margin:4%;}
+.tabwidth li p{font-size:18px;padding:20px 0px;}
+.tabwidth li p span{color:limegreen;font-size:10px;}
+.caret{transform:rotate(-90deg)}
+.img-box{height:195px;}
+
+.game-img1{width:100%;height:100%;background:url("../img/p1.jpg")no-repeat;}
+.game-img2{width:100%;height:100%;background:url("../img/gamepic3.jpg")no-repeat;}
+.game-img3{width:100%;height:100%;background:url("../img/gamepic15.jpg")no-repeat;}
+.game-img4{width:100%;height:100%;background:url("../img/gamepic2.jpg")no-repeat;}
+.game-img5{width:100%;height:100%;background:url("../img/gamepic12.jpg")no-repeat;}
+.game-img6{width:100%;height:100%;background:url("../img/gamepic6.jpg")no-repeat;}
+.game-img7{width:100%;height:100%;background:url("../img/gamepic10.jpg")no-repeat;}
+.game-img8{width:100%;height:100%;background:url("../img/gamepic23.jpg")no-repeat;}
+.big-box{height:62px;position:relative;}
+.big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:150px;top:10px;}
+.download-box{height:40px;}
+.small-gameimg1{background:url("../img/icon.png")no-repeat;background-position:0px -335px;
+                width:36px;height:60px;float:left;}
+.small-gameimg2{background:url("../img/icon.png")no-repeat;background-position:0px -435px;
+                width:36px;height:60px;}
+.download-box a,.download-box1 a{padding:20px 0px;}
+.download-box a:last-child,.download-box1 a:last-child{color:dimgray;
+                                                       text-decoration:none;font-size:16px;}
+.download-box a:last-child:hover,.download-box1 a:last-child:hover{color:green;}
+
+.download-box1 a{display:block;position:relative;}
+.QR-code-bg{position:absolute;right:1px;bottom:70%;width:130px;height:130px;
+    background:url("../img/ewmbg.png")no-repeat;background-size:100% 100%;display:none;}
+.QR-code{width:110px;height:110px;display:block;margin-top:4%;margin-right:8%;
+    background:url("../img/texas_poker116.png")no-repeat;
+    background-size:100% 100%;display:none;}
+.download-box1:hover .QR-code-bg{display:block;}
+.download-box1:hover .QR-code{display:block;}
+
+/*安卓部分 有一些样式和iPhone部分一样*/
+.game-img2-3{width:100%;height:100%;background:url("../img/ssanrk.jpg")no-repeat;}
+.small-gameimg3{background:url("../img/icon.png")no-repeat;background-position:0px -535px;
+    width:36px;height:60px;float:left;}
+/*iPad部分 和iPhone一样 只选取了前面六个*/
+
+
+/*pc部分 有一些样式和iPhone部分一样*/
+.big-box1{height:50px;width:100%;line-height:50px;}
+.big-box1 span{font-size:16px;padding-left:10%;}
+.big-box1 span,.big-box1 a{float:left;}
+.facebook,.xinlang,.people,.happy{;background-size:100% 100%;margin:10px 5px;}
+.facebook{width:26px;height:30px;background:url("../img/online.png")no-repeat;
+          background-position:0px -46px}
+.xinlang{width:26px;height:30px;background:url("../img/online.png")no-repeat;
+         background-position:-100px -46px;}
+.people{width:26px;height:30px;background:url("../img/online.png")no-repeat;
+        background-position:-75px -46px;}
+.happy{width:26px;height:30px;background:url("../img/online.png")no-repeat;
+       background-position:-50px -46px;}
+
+
+
+/*tv部分 有一些样式和iPhone部分一样*/
+.download1{width:32px;height:30px;background:url("../img/download-icon.png")no-repeat;}
+.download1{;background-size:100% 100%;margin:10px 5px;}
+
+
+
+
+
+
+
+/*版权部分*/
+.copyright{background:#191d3a;height:100%;}
+.copyright-text p{margin-top:30px;}
+.copyright-text p,.href{color:darkgray;font-size:14px;}
+.href:hover{color:white;text-decoration:none;}
+.copyright-text p img{width:40px;height:50px;}
+
+
+
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .bigimg div img{width:100%;height:260px!important;}
+    .gamebanner{display:none;}
+    .game-box{display:none;}
+    .bq{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:50%;top:10px;}
+    .game-img1,.game-img2,.game-img3,.game-img4,.game-img5,.game-img6,.game-img7,.game-img8{
+        margin-left:20%;}
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .bigimg div img{width:100%;height:400px!important;}
+    .gamebanner{display:none;}
+    .bq{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:50%;top:10px;}
+    .copyright-text p,.href{color:darkgray;font-size:12px;}
+    .game-img1,.game-img2,.game-img3,.game-img4,.game-img5,.game-img6,.game-img7,.game-img8{
+        margin-left:20%;}
+
+}
+@media only screen and (min-width:992px){
+    .bigimg div img{width:100%;height:460px!important;}
+}

@@ -1,0 +1,127 @@
+
+*{padding:0;margin:0;}
+
+
+/*返回顶部图标*/
+body{position:relative;}
+.top-img{background:url("../img/top.png")no-repeat;background-position:0px -40px;width:68px;height:30px;
+    position:fixed;top:600px;right:50px;}
+.top-img:hover{background-position:0px 0px;}
+
+
+
+.navbar-inverse{margin-bottom:0px;}
+.menu{padding:10px 15px;line-height:70px;
+    display:block;}
+.language{color:limegreen;}
+.language:hover{text-decoration:none;color:limegreen;}
+.language1:hover{color:limegreen;text-decoration:none;}
+
+
+.gamebanner{width:100%;height:254px;background:url("../img/faqbanner.jpg")no-repeat;}
+
+
+.game-box{height:50px;}
+.game-img{width:30px;height:50px;background:url("../img/location.png")no-repeat;
+    float:left;background-position:0px -178px;}
+.pull-left span{float:right;font-size:30px;line-height:50px;}
+
+.right-box{width:9%;height:30px;position:relative;margin:10px 0px;}
+.house-img{width:20px;height:20px;position:absolute;top:8px;
+    background:url("../img/home.png")no-repeat;}
+.caret-img{width:20px;height:20px;position:absolute;top:0;left:30px;
+    background:url("../img/icon.png")no-repeat;
+    background-position:0px -137px;}
+.pull-right span{float:right;font-size:14px;line-height:30px;}
+
+
+/*电话邮箱*/
+.li-box{display:flex;justify-content: space-between;}
+.company-box{background:lightgray;list-style:none;text-align:center;}
+.imgs{background:url("../img/faqicon.png")no-repeat;background-position:0px -20px;
+      width:50px;height:50px;margin-left:42%;margin-top:10%;}
+.imgs1{background:url("../img/faqicon.png")no-repeat;background-position:0px -220px;
+    width:60px;height:50px;margin-left:42%;margin-top:10%;}
+.xs-img{background:url("../img/faq_online.png")no-repeat;width:80px;height:24px;display:block;}
+.imgs2{background:url("../img/faqicon.png")no-repeat;background-position:0px -160px;
+    width:50px;height:50px;margin-left:42%;margin-top:10%;}
+.company-box h4 a{color:black;text-decoration:none;}
+.company-box h4 a:hover{text-decoration:underline;}
+
+
+
+
+
+
+
+
+
+.list-game{list-style:none;border:1px lightgray solid;text-align:center;}
+.list-game:hover{background:#eae8e8;}
+
+
+
+
+.text{padding:5% 0px;}
+.game-img1{width:70px;height:70px;background:url("../img/bya1.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img2{width:70px;height:70px;background:url("../img/byaddz.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img3{width:70px;height:70px;background:url("../img/byaxiangq.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img4{width:70px;height:70px;background:url("../img/byakawux.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img5{width:70px;height:70px;background:url("../img/byascmaj.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img6{width:70px;height:70px;background:url("../img/byamj.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.game-img7{width:70px;height:70px;background:url("../img/errenmaj2.png")no-repeat;
+           margin-left:36%;margin-top:10%;}
+.list-game0{padding:17% 34%;display:block;}
+
+
+
+
+
+/*版权部分*/
+.copyright{background:#191d3a;height:100%;}
+.copyright-text p{margin-top:30px;}
+.copyright-text p,.href{color:darkgray;font-size:14px;}
+.href:hover{color:white;text-decoration:none;}
+.copyright-text p img{width:40px;height:50px;}
+
+
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .gamebanner{width:800px;height:160px;background:url("../img/faqbanner.jpg")no-repeat;
+        background-size:100% 100%;}
+    .game-box{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .imgs{background:url("../img/faqicon.png")no-repeat;background-position:0px -20px;
+        width:50px;height:50px;margin-left:46%;margin-top:10%;}
+    .imgs1{background:url("../img/faqicon.png")no-repeat;background-position:0px -220px;
+        width:60px;height:50px;margin-left:46%;margin-top:10%;}
+    .imgs2{background:url("../img/faqicon.png")no-repeat;background-position:0px -160px;
+        width:50px;height:50px;margin-left:46%;margin-top:10%;}
+    .company-box{margin-top:3%;}
+
+
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .gamebanner{width:1000px;height:160px;background:url("../img/faqbanner.jpg")no-repeat;
+        background-size:100% 100%;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .copyright-text p,.href{color:darkgray;font-size:12px;}
+
+}
+@media only screen and (min-width:992px){
+    .bigimg div img{width:100%;height:460px!important;}
+}

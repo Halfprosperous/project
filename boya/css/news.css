@@ -1,0 +1,119 @@
+
+*{padding:0;margin:0;}
+
+/*返回顶部图标*/
+body{position:relative;}
+.top-img{background:url("../img/top.png")no-repeat;background-position:0px -40px;width:68px;height:30px;
+         position:fixed;top:600px;right:50px;}
+.top-img:hover{background-position:0px 0px;}
+
+.navbar-inverse{margin-bottom:0px;}
+.menu{padding:10px 15px;line-height:70px;
+    display:block;}
+.language{color:limegreen;}
+.language:hover{text-decoration:none;color:limegreen;}
+.language1:hover{color:limegreen;text-decoration:none;}
+
+
+.gamebanner{width:100%;height:254px;background:url("../img/newsbanner.jpg")no-repeat;}
+
+
+
+.game-box{height:50px;}
+.game-img{width:30px;height:50px;background:url("../img/location.png")no-repeat;
+    float:left;background-position:0px 15px;}
+.pull-left span{float:right;font-size:26px;line-height:50px;}
+
+.right-box{width:9%;height:30px;position:relative;margin:10px 0px;}
+.house-img{width:20px;height:20px;position:absolute;top:8px;
+    background:url("../img/home.png")no-repeat;}
+.caret-img{width:20px;height:20px;position:absolute;top:0;left:30px;
+    background:url("../img/icon.png")no-repeat;
+    background-position:0px -137px;}
+.pull-right span{float:right;font-size:14px;line-height:30px;}
+
+
+
+
+
+
+
+.news span:first-child{font-size:16px;color:limegreen;}
+.time{font-size:12px;color:lightgray;background:url("../img/icon.png")no-repeat;
+      background-position:0px -300px;}
+.news a{text-decoration:none;color:black;}
+.news a:hover{color:forestgreen;}
+
+
+
+.big-img{width:600px;height:400px;background:url("../img/66 .png");background-size:100% 100%;
+         margin-left:15%;margin-top:4%;}
+.col-md-9 p{font-size:14px;text-indent:2em;margin-top:4%;line-height:2em;}
+.col-md-9 p a{color:forestgreen;}
+
+
+
+.ul-company{list-style:none;}
+.ul-company li{margin:3% 0px;}
+.ul-company li a{color:black;font-size:14px;text-decoration: none;}
+.ul-company li a:hover{color:forestgreen;}
+.ul-company li span{color:lightgray;}
+
+
+.nav-tabs{border:none;margin-left:50%;}
+
+
+
+
+
+
+
+.col-md-3 p{text-align:center;}
+.col-md-3 p a{color:black;text-decoration:none;}
+.col-md-3 p a span{color:limegreen;transform:rotate(-90deg);}
+.col-md-3 p a:hover{color:limegreen;}
+.success-img{background:url("../img/npic1.jpg")no-repeat;width:100%;height:134px;
+              background-size:100% 100%;}
+
+
+
+
+
+
+/*版权部分*/
+.copyright{background:#191d3a;height:100%;margin-top:4%;}
+.copyright-text p{margin-top:30px;}
+.copyright-text p,.href{color:darkgray;font-size:14px;}
+.href:hover{color:white;text-decoration:none;}
+.copyright-text p img{width:40px;height:50px;}
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .bigimg div img{width:100%;height:260px!important;}
+    .gamebanner{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .news span b,.news a b{font-color:black;}
+    .success-img{background:url("../img/npic1.jpg")no-repeat;width:50%;height:134px;
+        background-size:100% 100%;margin-left:25%;margin-bottom:10%;}
+    .ul-company li{height:40px;}
+    .big-img{width:500px;height:300px;background:url("../img/66 .png");background-size:100% 100%;
+        margin-left:8%;margin-top:6%;}
+
+
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .bigimg div img{width:100%;height:400px!important;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .copyright-text p,.href{color:darkgray;font-size:12px;}
+
+}
+@media only screen and (min-width:992px){
+    .bigimg div img{width:100%;height:460px!important;}
+}

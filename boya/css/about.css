@@ -1,0 +1,187 @@
+
+*{padding:0;margin:0;}
+
+
+/*返回顶部图标*/
+body{position:relative;}
+.top-img{background:url("../img/top.png")no-repeat;background-position:0px -40px;width:68px;height:30px;
+    position:fixed;top:600px;right:50px;}
+.top-img:hover{background-position:0px 0px;}
+
+.navbar-inverse{margin-bottom:0px;}
+.menu{padding:10px 15px;line-height:70px;
+    display:block;}
+.language{color:limegreen;}
+.language:hover{text-decoration:none;color:limegreen;}
+.language1:hover{color:limegreen;text-decoration:none;}
+
+
+.gamebanner{width:100%;height:254px;background:url("../img/aboutbanner.jpg")no-repeat;}
+
+
+
+
+.game-box{height:50px;}
+.game-img{width:30px;height:50px;background:url("../img/location.png")no-repeat;
+    float:left;background-position:0px -35px;}
+.pull-left span{float:right;font-size:26px;line-height:50px;}
+
+.right-box{width:18%;height:30px;position:relative;margin:10px 0px;}
+.house-img{width:20px;height:20px;position:absolute;top:8px;
+    background:url("../img/home.png")no-repeat;}
+.caret-img{width:20px;height:20px;position:absolute;top:0;left:25px;
+    background:url("../img/icon.png")no-repeat;
+    background-position:0px -137px;}
+.caret-img1{width:20px;height:20px;position:absolute;top:0;left:60%;
+    background:url("../img/icon.png")no-repeat;
+    background-position:0px -137px;}
+.right-box>span{font-size:14px;line-height:30px;margin-left:20%;}
+.right-box .pull-right span{font-size:14px;line-height:30px;margin-left:6%;}
+
+
+
+
+
+
+
+
+.current a{font-color:mediumseagreen;}
+.swiper-slide{margin-left:10%;}
+.swiper-slide:hover a{color:mediumseagreen;}
+.swiper-slide a{font-size:20px;text-decoration:none;color:black;}
+
+
+
+
+
+
+.list-li{border-bottom:1px lightgray solid;height:60px;}
+.list-le{display:block;position:relative;}
+.list-le span{display:block;color:darkslategray;font-size:14px;}
+.list-li:hover .list-le span{color:forestgreen;}
+.caret-img2{width:26px;height:26px;background:url("../img/icon.png")no-repeat;
+            background-position:0px -135px;position:absolute;
+            top:14%;right:1%;}
+.list-text1 p{margin-top:4%;font-size:14px;text-indent:2em;line-height:2.5em;}
+
+
+
+dl dt{font-size:18px;list-style:block;margin-top:5%;font-size:20px;}
+dl dd p{margin-top:3%;font-size:14px;}
+.cgreen{color:green;}
+
+
+
+#tab3 div h2,#tab3 div h5{text-align:center;}
+#tab3 div h2{color:black;}
+#tab3 div h5{color:lightgray;}
+#tab3 div p{margin-top:5%;font-size:14px;line-height:2em;}
+.map-img{width:730px;height:356px;background:url("../img/map.png");
+         background-size:100% 100%;}
+#tab3 h2{color:black;}
+#tab3 h5{color:lightgray;}
+#tab3 h2,#tab3 h5{text-align:center;}
+#tab3 p{margin-top:5%;font-size:14px;line-height:2em;}
+.small-text{width:100%;height:20px;}
+.small-text span{font-size:14px;margin-left:2%;}
+.square{width:8px;height:8px;background:darkorange;border:1px red solid;margin-top:1%;}
+
+
+.row{list-style:none;margin-top:4%;}
+
+
+
+
+.about-text{height:200px;list-style:none;}
+.img1{width:100px;height:100px;margin-top:2%;
+      background:url("../img/cul_icon.png")no-repeat;background-position:0px 0px;}
+.img2{width:100px;height:100px;margin-top:2%;
+    background:url("../img/cul_icon.png")no-repeat;background-position:0px -250px;}
+.img3{width:100px;height:100px;margin-top:2%;
+    background:url("../img/cul_icon.png")no-repeat;background-position:0px -500px;}
+.img4{width:100px;height:100px;margin-top:2%;
+    background:url("../img/cul_icon.png")no-repeat;background-position:0px -750px;}
+.text1{heigt:100px;margin:1% 0px;}
+.text1 h3 span{font-size:18px;color:darkorange;}
+.text2 h3 span{font-size:18px;color:forestgreen;}
+.text3 h3 span{font-size:18px;color:#6672ca;}
+.text4 h3 span{font-size:18px;color:orangered;}
+.text1 p,.text2 p,.text3 p,.text4 p,.text5 p{font-size:14px;line-height:1em;}
+
+
+
+
+
+
+
+#tab5 dt{font-size:30px;}
+#tab5 dt span{font-size:18px;color:lightgray;}
+#tab5 dd{border-bottom:1px lightgray solid;margin-bottom:5%;}
+#tab5 dd ul{list-style:none;height:100%;position:relative;}
+#tab5 dd ul li{margin-top:3%;}
+.company-name{height:100%;margin-top:1%;text-align:center;}
+.company-add{margin-left:3%;}
+.company-add p{line-height:1em;}
+
+
+
+
+.user{background:url("../img/icon.png")no-repeat left;
+      background-position:0px -600px;margin-bottom:3%;}
+.mail{background:url("../img/icon.png")no-repeat left;
+    background-position:0px -640px;margin-bottom:3%;}
+
+.big-map-img{background:url("../img/address.png")no-repeat;width:710px;height:330px;
+              background-size:100% 100%;}
+
+.QR-code-img{position:absolute;bottom:15%;right:2%;width:176px;height:176px;}
+.QR-code-img p{text-align:center;}
+
+
+
+/*版权部分*/
+.copyright{background:#191d3a;height:100%;}
+.copyright-text p{margin-top:30px;}
+.copyright-text p,.href{color:darkgray;font-size:14px;}
+.href:hover{color:white;text-decoration:none;}
+.copyright-text p img{width:40px;height:50px;}
+
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .bigimg div img{width:100%;height:260px!important;}
+    .gamebanner{display:none;}
+    .game-box{display:none;}
+    .bq{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:50%;top:10px;}
+    .game-img1,.game-img2,.game-img3,.game-img4,.game-img5,.game-img6,.game-img7,.game-img8{
+        margin-left:20%;}
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .bigimg div img{width:100%;height:400px!important;}
+    .gamebanner{display:none;}
+    .bq{display:none;}
+    .copyright{text-align:center;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:50%;top:10px;}
+    .copyright-text p,.href{color:darkgray;font-size:12px;}
+    .game-img1,.game-img2,.game-img3,.game-img4,.game-img5,.game-img6,.game-img7,.game-img8{
+        margin-left:20%;}
+    .game-box{display:none;}
+
+}
+@media only screen and (min-width:992px){
+    .bigimg div img{width:100%;height:460px!important;}
+    .caret-img1{width:20px;height:20px;position:absolute;top:0;left:60%;
+        background:url("../img/icon.png")no-repeat;
+        background-position:0px -137px;}
+}
+
+

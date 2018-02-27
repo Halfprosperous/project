@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0">
+    <title>Title</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+
+<!--返回顶部图标-->
+<div class="top-img"></div>
+
+<!--头部-->
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <!--Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header visible">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png">
+            </a>
+        </div>
+
+        <!--Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav hidden-sm"style="margin-left:30px;">
+                <li class="menu hidden-md"><a href="../index.html">首页</a></li>
+                <li class="menu hidden-md"><a href="../html/game.html">博雅游戏</a></li>
+                <li class="menu hidden-md"><a href="../html/news.html">博雅新闻</a></li>
+                <li class="menu hidden-md"><a href="../html/about.html">关于我们</a></li>
+                <li class="menu hidden-md"><a href="../html/service.html">客服中心</a></li>
+                <li class="menu hidden-md"><a href="#">投资者关系</a></li>
+                <button style="margin-top:18px;" type="button" class="btn btn-success hidden-md hidden-xs hidden-sm">加入我们</button>
+            </ul>
+            <div class="changeLang pull-right" style="margin-top:25px;">
+                <a class="language hidden-xs" href="boya.html" class="on china">中文</a>
+                <a class="language1 hidden-xs" href="en/index.html">EN</a>
+            </div>
+        </div> <!--.navbar-collapse-->
+    </div> <!--.container-->
+</nav>
+
+
+<section class="gamebanner"></section>
+
+
+
+<div class="page-header game-box container">
+    <div class="pull-left">
+        <a class="game-img"></a>
+        <span>博雅游戏</span>
+    </div>
+
+    <div class="pull-right right-box">
+        <a class="house-img"></a>
+        <a class="caret-img"></a>
+        <span>博雅游戏</span>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="tab-content vertical-tab-content" >
+
+
+        <!--点击页数-->
+        <div class="col-md-3 bq pagination">
+            <ul class="nav nav-tab vertical-tab tabchange" role="tablist" id="vtab">
+                <li role="presentation" class="list-tab">
+                    <a href="#tab1" aria-controls="home"
+                         role="tab" data-toggle="tab" class="list-le1">
+                        <span class="list-img1 pull-left"></span>
+                        <span class="text">iPhone</span>
+                        <span class="caret-img1 pull-right"></span>
+                    </a>
+
+                </li >
+                <li role="presentation" class="list-tab">
+                    <a href="#tab2" aria-controls="home"
+                         role="tab" data-toggle="tab" class="list-le2">
+                        <span class="list-img2 pull-left"></span>
+                        <span class="text"> Android </span>
+                        <span class="caret-img2 pull-right"></span>
+                    </a>
+                </li>
+                <li role="presentation" class="list-tab">
+                    <a href="#tab3" aria-controls="home"
+                         role="tab" data-toggle="tab" class="list-le3">
+                        <span class="list-img3 pull-left"></span>
+                        <span class="text">iPad</span>
+                        <span class="caret-img3 pull-right"></span>
+                    </a>
+                </li>
+                <li role="presentation" class="list-tab">
+                    <a href="#tab4" aria-controls="home"
+                         role="tab" data-toggle="tab" class="list-le4">
+                        <span class="list-img4 pull-left"></span>
+                        <span class="text">PC</span>
+                        <span class="caret-img4 pull-right"></span>
+                    </a>
+                </li>
+                <li role="presentation" class="list-tab">
+                    <a href="#tab5" aria-controls="home"
+                         role="tab" data-toggle="tab" class="list-le5">
+                        <span class="list-img5 pull-left"></span>
+                        <span class="text">TV</span>
+                        <span class="caret-img5 pull-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <ul role="tabpanel" class="tab-pane tabwidth col-md-9 active" id="tab1">
+            <li class="col-md-5">
+                <p> 德州扑克
+                    <span>Texas Hold’em poker</span>
+                    <span class="caret"></span>
+                </p>
+            <div class="img-box">
+            <a class="game-img1 col-md-12 col-xs-12"></a>
+            </div>
+            <div class="big-box">
+                <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                    <a class="small-gameimg1"></a>
+                    <a href="" class="pull-left">App Store</a>
+                </div>
+
+                <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                    <p>德州扑克</p>
+                </div>
+
+                <div class="hr"></div>
+                <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                    <a class="small-gameimg2 pull-left"></a>
+                    <a href="" class="pull-left">二维码下载
+                        <span class="QR-code-bg">
+                            <span class="QR-code"></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                    <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                </div>
+            </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  斗地主
+                    <span>landlords</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>斗地主</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  麻将全集
+                    <span>mahjong games</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img3 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>博雅十三张</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四川麻将
+                    <span>sichuan mahjong</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img4 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>麻将全集</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  二人麻将
+                    <span>TWO PLAYER MAHJONG</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img5 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>四川麻将</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四人斗地主
+                    <span>FOUR LANDLORDS</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img6 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>二人麻将</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  中国象棋
+                    <span>chinese chess of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img7 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>中国象棋</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="col-md-5">
+                <p>  卡五星麻将
+                    <span>Five star mahjong of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img8 col-md-12 col-xs-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6 visible-xs hidden-sm hidden-md hidden-lg">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+
+                    <div class="pull-left download-box col-md-6 vlsiable-sm hidden-md hidden-lg hidden-xs">
+                        <p>卡五星麻将</p>
+                    </div>
+
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6 hidden-xs hidden-sm">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 vlsiable-xs hidden-md hidden-lg" style="position:relative;">
+                        <a href="" style="color:forestgreen;display:block;position:absolute;right:20%;top:15px;font-size:16px;text-decoration:none;">下载</a>
+                    </div>
+
+                </div>
+            </li>
+
+
+
+
+        </ul>
+        <ul role="tabpanel" class="tab-pane tabwidth col-md-9" id="tab2">
+            <li class="col-md-5">
+                <p> 德州扑克
+                    <span>Texas Hold’em poker</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img1 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  斗地主
+                    <span>landlords</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>   博雅十三张
+                    <span>Chinese Poker Of Boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2-3 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四川麻将
+                    <span>sichuan mahjong</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img4 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  二人麻将
+                    <span>TWO PLAYER MAHJONG</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img5 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四人斗地主
+                    <span>FOUR LANDLORDS</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img6 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  中国象棋
+                    <span>chinese chess of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img7 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="col-md-5">
+                <p>  卡五星麻将
+                    <span>Five star mahjong of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img8 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg3"></a>
+                        <a href="" class="pull-left">下载游戏</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul role="tabpanel" class="tab-pane tabwidth col-md-9" id="tab3">
+            <li class="col-md-5">
+                <p>   博雅十三张
+                    <span>Chinese Poker Of Boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2-3 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四川麻将
+                    <span>sichuan mahjong</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img4 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  二人麻将
+                    <span>TWO PLAYER MAHJONG</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img5 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  四人斗地主
+                    <span>FOUR LANDLORDS</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img6 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="col-md-5">
+                <p>  中国象棋
+                    <span>chinese chess of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img7 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="col-md-5">
+                <p>  卡五星麻将
+                    <span>Five star mahjong of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img8 col-md-12"></a>
+                </div>
+                <div class="big-box">
+                    <div class="pull-left download-box col-md-6">
+                        <a class="small-gameimg1"></a>
+                        <a href="" class="pull-left">App Store</a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="pull-right download-box1 col-md-6">
+                        <a class="small-gameimg2 pull-left"></a>
+                        <a href="" class="pull-left">二维码下载
+                            <span class="QR-code-bg">
+                                <span class="QR-code"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul role="tabpanel" class="tab-pane tabwidth col-md-9" id="tab4">
+            <li class="col-md-5">
+                <p>  四人斗地主
+                    <span>FOUR LANDLORDS</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img1 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span>在线游戏：</span>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="xinlang"></a>
+                    <a href="#" class="people"></a>
+                    <a href="#" class="happy"></a>
+                </div>
+            </li>
+            <li class="col-md-5">
+                <p>  斗地主
+                    <span>landlords</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span>在线游戏：</span>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="happy"></a>
+                    <a href="#" class="xinlang"></a>
+                </div>
+            </li>
+
+            <li class="col-md-5">
+                <p>  四川麻将
+                    <span>sichuan mahjong</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img4 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span>在线游戏：</span>
+                    <a href="#" class="xinlang"></a>
+                </div>
+            </li>
+            <li class="col-md-5">
+                <p>  中国象棋
+                    <span>chinese chess of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img7 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span>在线游戏：</span>
+                    <a href="#" class="xinlang"></a>
+                </div>
+            </li>
+
+        </ul>
+        <ul role="tabpanel" class="tab-pane tabwidth col-md-9" id="tab5">
+            <li class="col-md-5">
+                <p>  四人斗地主
+                    <span>FOUR LANDLORDS</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img1 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span> 客户端下载：</span>
+                    <a href="#" class="download1"></a>
+                </div>
+            </li>
+            <li class="col-md-5">
+                <p>  斗地主
+                    <span>landlords</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img2 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span> 客户端下载：</span>
+                    <a href="#" class="download1"></a>
+                </div>
+            </li>
+
+            <li class="col-md-5">
+                <p>  四川麻将
+                    <span>sichuan mahjong</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img4 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span> 客户端下载：</span>
+                    <a href="#" class="download1"></a>
+                </div>
+            </li>
+            <li class="col-md-5">
+                <p>  中国象棋
+                    <span>chinese chess of boyaa</span>
+                    <span class="caret"></span>
+                </p>
+                <div class="img-box">
+                    <a class="game-img7 col-md-12"></a>
+                </div>
+                <div class="big-box1">
+                    <span> 客户端下载：</span>
+                    <a href="#" class="download1"></a>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+<!--版权部分-->
+<div class="container-fluid copyright">
+    <div class="container copyright-text">
+        <p>
+            <a class="href" href="#">网站地图</a>
+            <span>|</span>
+            <a class="href" href="#">免责声明</a>
+            <span>|</span>
+            <a class="href" href="#">监督举报</a>
+        </p>
+
+        <p>
+            Copyright © 2004 - 2019 博雅互动(Boyaa Interactive)
+            <a class="href" href="#">粤ICP备05062536号</a>
+        </p>
+
+        <p>
+            网络文化经营许可证：粤网文[2015]1991-405号 | 互联网出版许可证：新出网证（粤）字062号 | 增值电信业务经营许可证：粤B2-20110513
+            <img src="../img/govIcon.gif"/>
+        </p>
+
+    </div>
+</div>
+
+
+</body>
+<script>
+    $(function(){
+        window.onscroll=function(){
+            var height;
+            height=document.documentElement.scrollTop || document.body.scrollTop;
+            //console.log(height)
+            $(".top-img").click(function(){
+                if(document.documentElement.scrollTop>=600 || document.body.scrollTop>=600){
+                    document.documentElement.scrollTop=0
+                    document.body.scrollTop=0
+                }
+            })
+        }
+    })
+</script>
+</html>

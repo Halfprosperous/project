@@ -1,0 +1,108 @@
+
+*{padding:0;margin:0;}
+
+
+/*返回顶部图标*/
+body{position:relative;}
+.top-img{background:url("../img/top.png")no-repeat;background-position:0px -40px;width:68px;height:30px;
+    position:fixed;top:600px;right:50px;}
+.top-img:hover{background-position:0px 0px;}
+
+.navbar-inverse{margin-bottom:0px;}
+.menu{padding:10px 15px;line-height:70px;
+    display:block;}
+.language{color:limegreen;}
+.language:hover{text-decoration:none;color:limegreen;}
+.language1:hover{color:limegreen;text-decoration:none;}
+
+
+.text-center{width:100%;height:100px;}
+.text-center:hover{background:mediumseagreen;}
+.text-center:hover h4,.text-center:hover p{color:white;}
+.text-center h4{padding-top:10px;}
+.text-center p{font-size:14px;}
+.text-center p{color:green;}
+.caret{color:green;}
+.thumbnail{padding:0;border:none;}
+.container{position:relative;}
+/*.container-fluid{background:red;}*/
+.img-box{margin-top:80px;border-bottom:1px lightgray solid;}
+.carousel-indicators1{bottom:-20px;width:80px;background:white;margin-left:-20px;}
+/*.carousel-indicators1 li:hover{background:limegreen;}*/
+
+
+
+
+
+
+
+.bg{background:url("../img/bg.jpg")no-repeat;
+    background-size:100% 100%;}
+.le-box{width:50%;height:400px;margin-top:50px;
+    background:url("../img/bg1.jpg")no-repeat;
+    background-size:100% 100%;}
+.le-box .le-btn{border:1px mediumseagreen solid;background:white;outline:none;
+    color:mediumseagreen;}
+.le-box .le-btn:hover{background:mediumseagreen;
+    color:white;}
+.ri-box{width:50%;height:400px;
+    background:url("../img/bg-people.jpg")no-repeat;
+    margin-top:50px;background-size:100% 100%;}
+.ri-btn{border:1px white solid;background:mediumseagreen;outline:none;
+    color:white;}
+.ri-btn:hover{background:white;color:mediumseagreen}
+.text-box{height:100%;position:relative;}
+.text-box h2{margin-top:40%;}
+.Eng{color:white;position:absolute;top:20%;}
+.page-header{margin:24px 0px 0px;padding-bottom:38px;}
+.page-header a{color:black;text-decoration:none;}
+.page-header a:hover{color:mediumseagreen;}
+.page-header span:last-child{color:lightgray;}
+.jobs h3{color:white;}
+
+.pull-right li{border-bottom:1px white solid;
+    margin-top:4%;}
+.pull-right li a{color:white;text-decoration:none;}
+.pull-right h2{color:white;}
+.btn{color:white;text-decoration:none;}
+
+
+
+
+/*版权部分*/
+.copyright{background:#191d3a;height:100%;}
+.copyright-text p{margin-top:30px;}
+.copyright-text p,.href{color:darkgray;font-size:14px;}
+.href:hover{color:white;text-decoration:none;}
+.copyright-text p img{width:40px;height:50px;}
+
+@media only screen and (max-width:768px) and (min-width:0px){
+    .copyright{text-align:center;}
+    .page-header{margin:8px 0px 0px;padding-bottom:6px;}
+    .copyright-text p,.href{color:darkgray;font-size:10px;}
+    .big-box .hr{border-right:1px lightgray solid;height:40px;position:absolute;left:50%;top:10px;}
+    .bigimg div img{width:100%;height:260px!important;}
+    .copyright{text-align:center;}
+    .copyright .href{font-size:20px;}
+
+
+
+}
+
+
+
+@media only screen and (max-width:992px) and (min-width:768px){
+    .bigimg div img{width:100%;height:400px!important;}
+    .hidden-sm li{display:none;}
+
+}
+
+
+
+
+@media only screen and (min-width:992px){
+    .bigimg div img{width:100%;height:460px!important;}
+
+
+
+}
