@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,height=device-height,user-scalable=1.0,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0">
-<title></title>
-<script src="js/jquery-2.1.0.min.js"></script>
-<link rel="stylesheet" href="../css/shopcar.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,user-scalable=1.0,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="../css/shopcar.css">
+	<script src="../js/jquery-1.9.0.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js">
+	</script>
+	<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular-route.min.js">
+	</script>
+	<script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js">
+	</script>
 </head>
 <body>
-<div class="all">
+<div class="all" ng-app="myapp">
 	<div class="top">
 		<div class="top-le">
 			<img src="../img/register.img/left_03.gif">
@@ -26,37 +33,37 @@
 			</div>
 		</div><!--凑单部分-->
 		<p class="cart-title"><span>非促销商品</span></p>
-		
-		
+
+
 		<ul class="ul">
-		<li class="content">
-			<div class="con-le">
-				<input type="checkbox">
-			</div>
-			<div class="con-ce">
-				<img src="../img/top2.jpg">
-			</div>
-			<div class="con-ri">
-				<p>
-					<a href="">花王乐而雅 零触感超薄量多日用护翼卫生巾（超薄瞬吸S系列，日用25cm）
-					</a>
-				</p>
-				<div class="pri-box">
-					<div class="price">¥49</div>
-					<div class="number">
-						<div class="less">-</div>
-						<div class="num">1</div>
-						<div class="more">+</div>
+			<li class="content">
+				<div class="con-le">
+					<input type="checkbox">
+				</div>
+				<div class="con-ce">
+					<img src="../img/top2.jpg">
+				</div>
+				<div class="con-ri">
+					<p>
+						<a href="">花王乐而雅 零触感超薄量多日用护翼卫生巾（超薄瞬吸S系列，日用25cm）
+						</a>
+					</p>
+					<div class="pri-box">
+						<div class="price">¥49</div>
+						<div class="number" ng-controller="ctrl">
+							<div class="less" ng-click="fun()">-</div>
+							<input class="num" value="1" ng-model="text">
+							<div class="more" ng-click="fun1()">+</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</li>
+			</li>
 		</ul>
 		<!--加入的购物车商品-->
-		
-		
-		
-		
+
+
+
+
 		<div class="about">
 			<p class="cart-title">
 				<span>超值换购（满238元限购一份）</span>
@@ -79,7 +86,7 @@
 						<img src="../img/register.img/555_03.gif">
 					</div>
 				</li>
-				
+
 				<li class="pro">
 					<div class="pro-img">
 						<img src="../img/register.img/1-2.JPG">
@@ -114,39 +121,44 @@
 				</li>
 			</ul>
 		</div>
+
+		<ul class="money">
+			<li>
+				<input type="checkbox">
+				<p>全选</p>
+			</li>
+			<li class="money-li">
+				<p>合计：￥49</p>
+				<p>以优惠：￥0   运费：￥0</p>
+			</li>
+			<li class="count"><button>结算</button></li>
+		</ul>
+
 	</div>
-	
-	
-	<!--<ul class="down"><!--下方切换部分-->
-		<!--<li class="index">
-			<div class="img1">
-				<img src="../img/register.img/1.gif">
-			</div>
-			<div class="text1">甫田</div>
-		</li>
-		<li class="classify1">
-			<div class="img2">
-				<img src="../img/register.img/2.gif">
-			</div>
-			<div class="text2">分类</div>
-		</li>
-		<li class="img3">
-			<img src="../img/register.img/3.gif"/>
-		</li>
-		<li class="food">
-			<div class="img4">
-				<img src="../img/register.img/4.gif">
-			</div>
-			<div class="text4">食记</div>
-		</li>
-		<li class="myself">
-			<div class="img5">
-				<img src="../img/register.img/5.gif">
-			</div>
-			<div class="text5">我</div>
-		</li>
-	</ul>-->
+
+
+
+
+
 </div>
 </body>
-<script src="../js/shopcar.js"></script>
+<script>
+    var app=angular.module("myapp",[]);
+    app.controller("ctrl",function ($scope) {
+        $scope.text=1;
+        $scope.fun=function () {
+            var value=Number($scope.text);
+            console.log(value)
+            if($scope.text<=0){
+                $scope.text=0
+			}
+			else{$scope.text--}
+
+            }
+
+        $scope.fun1=function () {
+            $scope.text+=1
+        }
+        })
+</script>
 </html>
