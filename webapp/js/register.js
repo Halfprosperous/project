@@ -1,7 +1,4 @@
 $(function(){
-	$(".top").click(function(){
-		window.location.href="../html/myself.html"
-	})
 	var arr=[false,false,false];	
 //电话验证	
 	$(".phone").blur(function(){
